@@ -63,7 +63,6 @@ aside.case-study-sidebar {
   float: left;
   display: block;
   width: 314px;
-  margin-right: 50px;
 }
 
 aside.case-study-sidebar h2 {
@@ -104,11 +103,12 @@ aside.case-study-sidebar a {
 
 
 .case-study-images {
-  display: inline;
+  display: block;
+  margin-left: 350px;
+  margin-top: 20px;
 }
 
 .case-study-images img{
-  display: inline;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   border: 1px solid #ddd;
 }

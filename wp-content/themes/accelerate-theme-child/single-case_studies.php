@@ -25,7 +25,7 @@ get_header(); ?>
 		$image_3 = get_field('image_3');
 	?>
 
-	<article class="case-study">
+
 			<aside class="case-study-sidebar">
 					<h2><?php the_title(); ?></h2>
 					<h5><?php echo $services; ?></h5>
@@ -36,7 +36,6 @@ get_header(); ?>
           <p><a href="<?php echo $link; ?>">Site Link</a></p>
 
 				</aside>
-
 				<div class="case-study-images">
 					  <?php if($image_1) { ?>
 							<img src="<?php echo $image_1; ?>" />
@@ -48,7 +47,6 @@ get_header(); ?>
 						  <img src="<?php echo $image_3; ?>" />
 						<?php } ?>
 				</div>
-			</article>
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
