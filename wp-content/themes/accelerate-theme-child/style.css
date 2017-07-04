@@ -26,10 +26,31 @@
 }
 
 #masthead nav ul li {
-  float: left;
+  float: right;
   margin: 0 10px;
 }
 
+/* Home Page Case Studies Styling */
+
+
+.homepage-featured-work {
+  position: relative;
+  margin: auto;
+}
+
+.homepage-case-studies {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+.homepage-case-studies ul{
+   list-style-type: none;
+}
+
+
+/* Home Page Blog Styling??? */
 .blog-post {
 	width: 50%;
 }
@@ -58,20 +79,19 @@
 
 /* Case Studies Styling */
 
-
-aside.case-study-sidebar {
+.case-study-sidebar {
   float: left;
   display: block;
   width: 314px;
 }
 
-aside.case-study-sidebar h2 {
+.case-study-sidebar h2 {
   font-size: 22px;
 	font-family: 'Open Sans';
   font-weight: lighter;
 }
 
-aside.case-study-sidebar h5 {
+.case-study-sidebar h5 {
   font-size: 12px;
 	font-family: 'Open Sans';
   font-weight: lighter;
@@ -79,7 +99,7 @@ aside.case-study-sidebar h5 {
   margin: 12px 0px;
 }
 
-aside.case-study-sidebar h4 {
+.case-study-sidebar h4 {
   font-size: 12px;
 	font-family: 'Open Sans';
   font-weight: lighter;
@@ -87,7 +107,7 @@ aside.case-study-sidebar h4 {
   margin: 12px 0px;
 }
 
-aside.case-study-sidebar p {
+.case-study-sidebar p {
   font-size: 14px;
 	font-family: 'Open Sans';
   font-weight: lighter;
@@ -95,7 +115,7 @@ aside.case-study-sidebar p {
   margin-top: 24px;
 }
 
-aside.case-study-sidebar a {
+.case-study-sidebar a {
   font-size: 14px;
 	font-family: 'Open Sans';
   font-weight: bold;
@@ -111,4 +131,44 @@ aside.case-study-sidebar a {
 .case-study-images img{
   margin-bottom: 50px;
   border: 1px solid #ddd;
+}
+
+/*Case Studies Archive Styling */
+
+
+/* CONTACT form */
+
+
+.contact-form {
+  max-width: 70%;
+  margin: auto;
+}
+
+
+
+#nf-field-1 {
+  font-weight: lighter;
+}
+
+#nf-field-1-container {
+  float: left;
+  display: inline-block;
+  width: 320px;
+}
+
+#nf-field-2-container {
+  margin-left: 30px;
+  display: inline-block;
+  width: 320px;
+}
+
+#nf-field-4 {
+    background: none repeat scroll 0 0  #45ac9d;
+    color: white;
+    font-family: "montserrat";
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 15px 60px;
+    text-align: center;
+    float: right;
 }

@@ -14,6 +14,8 @@
 
 get_header(); ?>
 
+
+<!-- jumbotron section -->
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -25,30 +27,42 @@ get_header(); ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
+
+
+
 <!--featured work/ case studies section-->
 <section class="featured-work">
   <div class="site-content">
 	  <h4>Featured Work</h4>
 
-    <ul class= "homepage-featured-work"
+    <ul class= "homepage-featured-work">
 	    <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 	    <?php while ( have_posts() ) : the_post();
          $image_1 = get_field("image_1");
-         $size = 'medium';
+         $size = "medium";
 	    ?>
-	       <li>
-           <figure>
-              <?php echo wp_get_attachment_image($image_1, $size);
-					    ?>
-			     </figure>
-		       <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        </li>
+
+        <li class="homepage-case-studies" >
+				 <div class="case-study-home-images">
+		 			<?php if($image_1) { ?>
+		 				<?php echo wp_get_attachment_image( $image_1, $size ); ?>
+		 			<?php } ?>
+				 </div><!--case-study-home-images-->
+
+				 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			 </li><!--homepage-case-studies-->
+
 	    <?php endwhile; ?>
 	    <?php wp_reset_query(); ?>
-    </ul>
-   </div>
- </section>
 
+    </ul><!--homepage-featured-work-->
+  </div><!--site-content-->
+</section><!--featured-work-->
+
+
+
+
+<!--blog section-->
 <section class="recent-posts">
 	<div class="site-content">
 		<div class="blog-post">
@@ -60,8 +74,8 @@ get_header(); ?>
        		<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
      		<?php endwhile; ?>
     		<?php wp_reset_query(); ?>
-	  </div>
-	</div>
-</section>
+	  </div><!--blog-post-->
+	</div><!--site-content-->
+</section><!--recent-posts-->
 
 <?php get_footer(); ?>

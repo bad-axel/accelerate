@@ -14,6 +14,7 @@
 
 get_header(); ?>
 
+
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -22,6 +23,7 @@ get_header(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
+
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
