@@ -133,7 +133,115 @@
   border: 1px solid #ddd;
 }
 
-/*Case Studies Archive Styling */
+/*ABOUT page */
+
+
+.about-page {
+   max-width: 75%;
+   margin: 0 auto;
+
+}
+.content-strategy {
+  height: 250px;
+}
+.content-strategy-image {
+   display: inline-block;
+   float: left;
+   margin-right: 20px;
+   margin-top: 10px;
+}
+
+.content-strategy-text {
+   display: inline;
+}
+
+.content-strategy-text h4{
+   display: inline;
+   margin: 10px 0 20px 0;
+   font-weight: normal;
+}
+
+.influencer-mapping {
+  height: 250px;
+}
+
+.influencer-mapping-image {
+   display: inline
+   float: right;
+ margin-top: 10px;
+   height: 250px;
+}
+
+.influencer-mapping-text {
+   display: inline-block;
+   float: left;
+   margin-right: 20px;
+   max-width: 500px;
+   height: 250px;
+}
+
+.influencer-mapping-text h4{
+   display: inline-block;
+   margin: 10px 0 20px 0;
+   font-weight: normal;
+}
+
+.social-media {
+  height: 250px;
+}
+.social-media-image {
+   display: inline-block;
+   float: left;
+   margin-right: 20px;
+   margin-top: 10px;
+
+}
+.social-media-text {
+   display: inline;
+   clear: none;
+height: 250px;
+
+}
+
+.social-media-text h4{
+   display: inline;
+   margin: 10px 0 20px 0;
+   font-weight: normal;
+
+
+}
+
+.design-development {
+  height: 250px;
+}
+.design-development-image {
+   display: inline
+   float: right;
+margin-top: 10px;
+
+}
+
+.design-development-text {
+   display: inline-block;
+   float: left;
+   margin-right: 20px;
+
+   max-width: 500px;
+   height: 250px;
+
+}
+
+.design-development-text h4{
+   display: inline-block;
+   margin: 10px 0 20px 0;
+   font-weight: normal;
+
+
+}
+.interested .button {
+  float: right;
+}
+
 
 
 /* CONTACT form */
