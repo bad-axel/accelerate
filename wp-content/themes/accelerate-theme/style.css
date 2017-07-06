@@ -547,8 +547,8 @@ a:hover {
 aside.sidebar {
 	border-left: 1px solid #bfbfbf;
 	padding: 55px 0;
-	float: left;
-	width: 31%;
+	float: right;
+	width: 25%;
 }
 
 /* header */

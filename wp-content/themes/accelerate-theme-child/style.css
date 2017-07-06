@@ -32,43 +32,58 @@
 
 /* Home Page Case Studies Styling */
 
+.featured-work h4 {
+  text-transform: capitalize;
+  margin: 20px auto;
+  text-align: center;
+}
 
 .homepage-featured-work {
   position: relative;
   margin: auto;
+  max-width: 960px;
 }
 
 .homepage-case-studies {
-  position: absolute;
-  display: inline-block;
+  display: block;
   float: left;
   padding: 10px;
+  margin-bottom: 80px;
 }
 
+.homepage-case-studies h3 {
+  margin: 30px auto;
+  text-align: center;
+  font-weight: lighter;
+}
 .homepage-case-studies ul{
    list-style-type: none;
 }
 
 
 /* Home Page Blog Styling??? */
-.blog-post {
-	width: 50%;
+.from-the-blog {
+  margin-left: 50px;
+  display: inline-block;
+  max-width: 40%;
+  margin-right: 20px;
 }
 
-.blog-post h2 {
+.from-the-blog h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 }
 
-.blog-post h4 {
+.from-the-blog h4 {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
+  font-weight: lighter;
 }
 
-.blog-post .read-more-link {
+.from-the-blog .read-more-link {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	font-weight: bold;
@@ -76,6 +91,42 @@
 	text-transform: uppercase;
 }
 
+/* Home Page twitter widget */
+
+
+.twitter-feed {
+  float: right;
+  display: inline-block;
+  max-width: 45%;
+  margin-right: 50px;
+}
+.widget-title {
+  font-size: 24px;
+  font-family: 'Montserrat';
+  color: #a6a6a6;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+
+}
+.PI_SimpleTwitterTweets {
+  padding-left: 0;
+}
+.twitter-feed h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.twitter-feed .follow-us-link {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
 
 /* Case Studies Styling */
 
@@ -133,14 +184,33 @@
   border: 1px solid #ddd;
 }
 
+
+
+
 /*ABOUT page */
 
-
+.teal {
+  color: #45ac9d;
+}
+.services-header h1 {
+  font-weight: lighter;
+  font-size: 30px;
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+}
 .about-page {
    max-width: 75%;
    margin: 0 auto;
-
 }
+.our-services {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.our-services h3{
+  text-transform: uppercase;
+}
+
 .content-strategy {
   height: 250px;
 }
@@ -156,7 +226,7 @@
 }
 
 .content-strategy-text h4{
-   display: inline;
+   display: inline-block;
    margin: 10px 0 20px 0;
    font-weight: normal;
 }
@@ -204,7 +274,7 @@ height: 250px;
 }
 
 .social-media-text h4{
-   display: inline;
+   display: inline-block;
    margin: 10px 0 20px 0;
    font-weight: normal;
 
@@ -238,10 +308,23 @@ margin-top: 10px;
 
 
 }
-.interested .button {
-  float: right;
-}
 
+.interested {
+  max-width: 75%;
+  margin: auto;
+
+}
+.interested .button {
+  float: left;
+  margin: 25px 0px 45px 30px;
+  font-weight: normal;
+  padding: 10px 80px;
+
+}
+.interested h2 {
+  float: left;
+  margin: 40px 0 20px;
+}
 
 
 /* CONTACT form */
@@ -279,4 +362,18 @@ margin-top: 10px;
     padding: 15px 60px;
     text-align: center;
     float: right;
+}
+
+/* 404 page */
+.four-oh-four-image {
+   width: 80%;
+   margin: 100px auto;
+   display: block;
+}
+.go-home .button{
+  margin: 100px auto;
+  font-weight: normal;
+  display: block;
+  max-width: 30%;
+  background-color: #4472C4;
 }

@@ -33,7 +33,7 @@ get_header(); ?>
 <!--featured work/ case studies section-->
 <section class="featured-work">
   <div class="site-content">
-	  <h4>Featured Work</h4>
+	  <h4>FEATURED WORK</h4>
 
     <ul class= "homepage-featured-work">
 	    <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
@@ -63,9 +63,7 @@ get_header(); ?>
 
 
 <!--blog section-->
-<section class="recent-posts">
-	<div class="site-content">
-		<div class="blog-post">
+	<div class="from-the-blog">
 			<h4>From the Blog</h4>
 				<?php query_posts('posts_per_page=1'); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -74,8 +72,20 @@ get_header(); ?>
        		<a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
      		<?php endwhile; ?>
     		<?php wp_reset_query(); ?>
-	  </div><!--blog-post-->
+
 	</div><!--site-content-->
-</section><!--recent-posts-->
+
+
+<!--twitter feed-->
+<section class="twitter-feed">
+	<h4>Recent Tweet</h4>
+      <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+        <div id="secondary" class="widget-area" role="complementary">
+ 	    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+			<a class="follow-us-link" href="<?php the_permalink(); ?>">Follow Us <span>&rsaquo;</span></a>
+<?php endif; ?>
+
+</section>
+
 
 <?php get_footer(); ?>

@@ -16,8 +16,8 @@ get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-				<?php the_content(); ?>
+			<div class='services-header'>
+				<h1><?php the_content(); ?></h1>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
@@ -26,7 +26,6 @@ get_header(); ?>
 
 
 <!--our services-->
-<section class="our-services">
 	<div class="site-content">
 
 
@@ -58,8 +57,10 @@ get_header(); ?>
 					$size = 'thumbnail';
 				?>
 
+<div class="our-services">
 				<h3>Our Services</h3>
 				<?php echo $our_services; ?>
+</div>
 
 <div class="content-strategy">
 <div class = "content-strategy-image">
@@ -107,21 +108,24 @@ get_header(); ?>
 
 
 			  <?php endwhile; // end of the loop. ?>
-      </div><!--.about-page-->
-		</div><!-- #content -->
-	</div><!-- #primary -->
+
 
 
 		</div> <!--site-content-->
-	</section> <!--our-services-->
+
 
 	<!--interested??-->
+<hr>
 
 <div class="interested">
-<hr>
 <h2>Interested in working with us?</h2>
 <a class="button" href="<?php echo home_url(); ?>/blog">Contact Us</a>
-<hr>
 </div>
+
+
+
+</div><!--.about-page-->
+</div><!-- #content -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
